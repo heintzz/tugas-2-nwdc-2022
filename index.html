@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tugas 2 | NWDC</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "c-purple": "#404eed",
+                        "c-gray": "#23272a",
+                    },
+                    fontFamily: {
+                        "header" : ["Arvo"],
+                    },
+                    screens: {
+                        'sm': '682px',
+                        'md': '768px',
+                    },
+                    scale: {
+                        '500': '50',
+                    },
+                },
+            },
+        };
+    </script>
+
+</head>
+
+<body>
+    <section class="bg-c-purple overflow-hidden">
+        <nav class= "px-5 md:px-10 lg:px-20">
+            <ul class="flex justify-between items-center h-24">
+                <li class="text-white tracking-wider font-bold text-xl">Discord</li>
+                <div class="menu hidden lg:inline-block">
+                    <ul class="flex gap-10 items-center font-bold tracking-wider text-white text-[16px]">
+                        <li ><a href="#" class="hover:underline">Download</a></li>
+                        <li ><a href="#" class="hover:underline">Nitro</a></li>
+                        <li ><a href="#" class="hover:underline">Safety</a></li>
+                        <li ><a href="#" class="hover:underline">Support</a></li>
+                        <li ><a href="#" class="hover:underline">Blog</a></li>
+                        <li ><a href="#" class="hover:underline">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="buttonContainer flex items-center gap-3">
+                    <a href="#" class="bg-white py-2 px-4 tracking-wider rounded-full">Login</a>
+                    <i class="fa-solid fa-bars text-white text-2xl md:hidden"></i>
+                </div>
+            </ul>
+        </nav>
+        <main class="px-5 pt-16 md:pl-10 max-w-[950px] md:w-2/3 lg:flex-col lg:px-0 lg:pt-32 lg:my-0 lg:mx-auto lg:text-center lg:max-w-[780px]">
+            <h1 class="text-4xl font-extrabold tracking-wider text-white font-header sm:text-6xl lg:text-8xl">IMAGINE A PLACE...</h1>
+            <p class="mt-6 mb-7 text-white text-[clamp(16px,2vw,20px)]">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+            <div class="flex flex-col text-center gap-3.5 md:flex-row lg:justify-center lg:flex-col">
+                <div class="flex flex-col gap-5 sm:flex-row md:flex-col lg:flex-row lg:justify-center lg:relative lg:z-10">
+                    <a href="#" class="flex items-center justify-center gap-3 text-[18px] w-[320px] px-7 py-4 bg-white rounded-full hover:text-indigo-600 hover:drop-shadow-2xl"><i class="fa-solid fa-download"></i><span class="sm:hidden">Download from Google Play</span><span class="hidden sm:inline lg:hidden">Download for IOS</span><span class="hidden lg:inline">Download for Windows</span></a>
+                    <a href="https://discord.com/" class="w-[320px] px-7 py-4 rounded-full bg-c-gray text-[18px] text-white lg:w-[25rem] hover:drop-shadow-2xl">Open Discord in your browser</a>
+                </div>
+                <img src="relax.png" alt="relaxing guy" class="ml-6 mt-6 w-[70%] max-w-[450px] sm:ml-0 sm:place-self-center md:hidden lg:hidden">
+                <img src="party.svg" alt="party guy" class="hidden md:block ml-[40px] lg:w-full lg:ml-[680px] lg:-mt-[215px] lg:hidden">
+                <div class="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:-mt-[200px]">
+                    <img src="relax.png" alt="relaxing guy" class="ml-[50px]">
+                    <img src="cloud.svg" alt="cloud" class="place-self-end">
+                    <img src="party.svg" alt="party guy">    
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
